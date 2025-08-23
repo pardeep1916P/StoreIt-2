@@ -210,6 +210,12 @@ export const ForgotPasswordForm = () => {
           variant: "destructive",
         });
       }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to resend code. Please try again.",
+        variant: "destructive",
+      });
     }
   };
 

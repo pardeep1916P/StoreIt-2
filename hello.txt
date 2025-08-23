@@ -1,0 +1,3 @@
+Hello! 👋
+
+This is a simple hello file created to test file creation.
