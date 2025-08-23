@@ -1,0 +1,50 @@
+{
+    "name": "storeit-lambda-server",
+    "version": "1.0.0",
+    "description": "StoreIt Lambda Backend Server for AWS deployment",
+    "main": "index.mjs",
+    "type": "module",
+    "scripts": {
+      "build": "zip -r lambda-deployment.zip . -x 'node_modules/*' '*.log' '*.md' 'tests/*' 'deploy.sh'",
+      "deploy": "npm run build && echo '✅ Lambda deployment package created: lambda-deployment.zip'",
+      "test": "echo 'Testing Lambda function...' && node -e \"import('./index.mjs').then(m => console.log('✅ Lambda handler loaded successfully'))\"",
+      "test:chunk": "node simple-test.mjs",
+      "test:full": "node test-chunk-upload.mjs",
+      "dev": "serverless offline start",
+      "deploy:aws": "serverless deploy",
+      "deploy:aws:prod": "serverless deploy --stage production",
+      "remove": "serverless remove"
+    },
+    "dependencies": {
+      "@aws-sdk/client-cognito-identity-provider": "^3.450.0",
+      "@aws-sdk/client-s3": "^3.450.0",
+      "@aws-sdk/client-dynamodb": "^3.450.0",
+      "@aws-sdk/lib-dynamodb": "^3.450.0",
+      "@aws-sdk/s3-request-presigner": "^3.450.0",
+      "uuid": "^9.0.0",
+      "jsonwebtoken": "^9.0.2",
+      "jwks-rsa": "^3.0.1"
+    },
+    "devDependencies": {
+      "serverless": "^3.38.0",
+      "serverless-offline": "^13.3.0"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    },
+    "keywords": [
+      "aws",
+      "lambda",
+      "cognito",
+      "s3",
+      "dynamodb",
+      "serverless",
+      "file-storage"
+    ],
+    "author": "StoreIt Team",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/your-username/storeit-backend"
+    }
+  } 
