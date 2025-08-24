@@ -59,8 +59,8 @@ graph LR
 ### Quick Start
 ```bash
 # Clone repository
-git clone https://github.com/pardeep1916P/StoreIt.git
-cd StoreIt
+git clone https://github.com/pardeep1916P/StoreIt-2.git
+cd StoreIt-2/frontend
 
 # Install dependencies
 npm install
