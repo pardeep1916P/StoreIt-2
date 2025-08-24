@@ -2,10 +2,9 @@
 
 A modern, scalable cloud file storage application built with **AWS serverless architecture**, featuring secure file management, real-time sharing, and intelligent storage optimization.
 
-## 🌟 Live Demo & Links
-
-- **🌐 Live Application**: [https://storeit-cloud-drive.vercel.app/](https://storeit-cloud-drive.vercel.app/)
-- **📁 GitHub Repository**: [https://github.com/pardeep1916P/StoreIt](https://github.com/pardeep1916P/StoreIt)
+## 🌟 Live Demo
+- Vercel 👉  https://storeit-v2.vercel.app/
+- AWS Amplify 👉  https://main.d35pzumyrq6z5v.amplifyapp.com/
 
 ## 🏗️ Architecture
 
@@ -48,7 +47,7 @@ graph LR
 - **Database**: AWS DynamoDB
 - **Storage**: AWS S3
 - **Authentication**: AWS Cognito
-- **Deployment**: Vercel
+- **Deployment**: Vercel && AWS Amplify
 
 ## 🚀 Getting Started
 
