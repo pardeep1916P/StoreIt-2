@@ -83,5 +83,3 @@ MIT License
 **🔗 Connect with me:**
 - **LinkedIn**: [Charan Chaitanya Devanaboyina](https://linkedin.com/in/chinnu-4a7174306)
 - **GitHub**: [@pardeep1916P](https://github.com/pardeep1916P)
-
-*Built with ❤️ using modern cloud technologies.*
